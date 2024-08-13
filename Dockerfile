@@ -4,7 +4,7 @@ ENV PYTHONDONTWRITEBYTECODE 1 \
     PYTHONUNBUFFERED 1
 
 RUN apt-get update && apt-get install -y git
-RUN pip install --upgrade --no-cache-dir 'black==23.1.0'
+RUN pip install --upgrade --no-cache-dir 'black==24.3.0'
 
 COPY entrypoint.sh /entrypoint.sh
 COPY main.py /main.py
